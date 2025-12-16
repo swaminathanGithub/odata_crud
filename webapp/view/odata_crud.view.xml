@@ -8,7 +8,6 @@
           <Column id="_IDGenColumn" >
             <Text id="_IDGenText" text="ID"/>
           </Column>
-
           <Column id="_IDGenColumn2" >
             <Text id="_IDGenText2" text="Name"/>
           </Column>
