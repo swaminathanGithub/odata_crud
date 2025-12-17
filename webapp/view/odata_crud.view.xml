@@ -2,7 +2,8 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-      <Table id="idProducts" items="{/results}">
+      <!-- <Table id="idProducts" items="{/results}"> -->
+      <Table id="idProducts" items="{/Products}">
         <columns>
           
           <Column id="_IDGenColumn" >
@@ -17,15 +18,23 @@
           <Column id="_IDGenColumn4" >
             <Text id="_IDGenText4" text="Rating"/>
           </Column>
+          <Column id="_IDGenColumn5" >
+            <Text text="empty"/>
+          </Column>
         </columns>
 
         <items>
           <ColumnListItem id="_IDGenColumnListItem1" >
             <cells>
               <Text id="_IDGenText1" text="{ID}"/>
-              <Text id="_IDGenText5" text="{Name}"/>
+              <Text id="_IDGenText5" text="{Name}"/>  
               <Text id="_IDGenText6" text="{Price}"/>
-              <Text id="_IDGenText7" text="{Rating}"/>
+              <Input id="_IDGenText7" value="{Rating}" editable="false"/>
+              <HBox >
+                <Button icon ="sap-icon://edit" text="Edit" press="onEdit"/>
+                <Button class="sapUiSmallMarginBeginEnd" type="Reject" icon ="sap-icon://delete" text="Delete" press="onDelete"/>
+                <Button icon ="sap-icon://copy" text="duplicate" press="onDuplicate"/>
+              </HBox>
             </cells>
           </ColumnListItem>    
         </items>
