@@ -3,7 +3,7 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
       <!-- <Table id="idProducts" items="{/results}"> -->
-      <Table id="idProducts" items="{/Products}">
+      <Table id="idProducts" items="{/Products}" updateFinished = 'onUpdateFinished' >
         <columns>
           
           <Column id="_IDGenColumn" >

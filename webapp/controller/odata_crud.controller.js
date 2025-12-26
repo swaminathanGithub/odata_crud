@@ -140,6 +140,9 @@ sap.ui.define([
                     console.log(oError);
                 }
             });
+        },
+        onUpdateFinished: function(oEvent) {
+            sap.ui.core.BusyIndicator.hide();
         }
     });
 });
