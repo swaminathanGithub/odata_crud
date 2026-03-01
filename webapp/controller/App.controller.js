@@ -5,7 +5,7 @@ sap.ui.define([
 
   return BaseController.extend("odatacrud.controller.App", {
       onInit() {
-        sap.ui.core.BusyIndicator.show(0);
+        //sap.ui.core.BusyIndicator.show(0);
       }
   });
 });

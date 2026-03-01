@@ -16,9 +16,10 @@ server:
             - /test-resources
           url: https://ui5.sap.com
         backend:
-          - path: /V2
-            url: https://services.odata.org
-            destination: Northwind
+          - authenticationType: reentranceTicket # SAML support for vscode
+            path: /sap
+            url: https://fa13318e-1cb9-41eb-b81d-1759ca1e28d3.abap.us10.hana.ondemand.com
+            destination: abap-cloud-myabapenvironment-fd3a56f7trial-dev
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -30,13 +31,3 @@ server:
       configuration:
         flp:
           theme: sap_horizon
-    - name: sap-fe-mockserver
-      beforeMiddleware: csp
-      configuration:
-        mountPath: /
-        services:
-          - urlPath: /V2/(S(5qv3ok40qsgpysmkoujlng0r))/OData/OData.svc
-            metadataPath: ./webapp/localService/mainService/metadata.xml
-            mockdataPath: ./webapp/localService/mainService/data
-            generateMockData: true
-        annotations: []

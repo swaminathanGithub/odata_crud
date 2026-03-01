@@ -15,13 +15,39 @@
       "version": "1.20.0",
       "toolsId": "a0a69730-7f9e-4653-a311-50ae04349fe9"
     },
-    "dataSources": {
+    "dataSources1": {
+      "ZSB_TRAVEL_SWAMI_V2_VAN": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZSB_TRAVEL_SWAMI_V2_VAN',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/ZSB_TRAVEL_SWAMI_V2_VAN.xml"
+        }
+      },
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      },
       "mainService": {
-        "uri": "/V2/(S(5qv3ok40qsgpysmkoujlng0r))/OData/OData.svc/",
+        "uri": "/sap/opu/odata/sap/ZSB_TRAVEL_SWAMI_V2/",
         "type": "OData",
         "settings": {
-          "annotations": [],
+          "annotations": [
+            "ZSB_TRAVEL_SWAMI_V2_VAN",
+            "annotation"
+          ],
           "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/destinations/Z_RAP_BACKEND/sap/opu/odata/sap/ZSB_TRAVEL_SWAMI_V2/",
+        "type": "OData",
+        "settings": {
           "odataVersion": "2.0"
         }
       }

@@ -26,6 +26,12 @@
       "target": "$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/destinations/(.*)$",
+      "target": "/$1",
+      "destination": "Z_RAP_BACKEND",
+      "authenticationType": "xsuaa"
     }
   ]
 }

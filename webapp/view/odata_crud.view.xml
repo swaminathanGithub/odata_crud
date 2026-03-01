@@ -3,7 +3,7 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
       <!-- <Table id="idProducts" items="{/results}"> -->
-      <Table id="idProducts" items="{/Products}" updateFinished = 'onUpdateFinished' >
+      <!-- <Table id="idProducts" items="{/Products}" updateFinished = 'onUpdateFinished' >
         <columns>
           
           <Column id="_IDGenColumn" >
@@ -38,6 +38,15 @@
             </cells>
           </ColumnListItem>    
         </items>
-      </Table>  
+      </Table>   -->
+
+      <content>          
+          <List id="_IDGenList" items="{/Travel}">
+                <StandardListItem id="_IDGenStandardListItem"
+                    title="{CustName}"
+                    description="Agent: {AgencyName}" />
+            </List>
+        </content>
+      
     </Page>
 </mvc:View>
