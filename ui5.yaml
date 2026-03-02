@@ -31,9 +31,4 @@ server:
       configuration:
         flp:
           theme: sap_horizon
-    - name: ui5-middleware-simpleproxy
-      afterMiddleware: compression
-      configuration:
-        mountPath: /rapproxy
-        baseUri: https://fa13318e-1cb9-41eb-b81d-1759ca1e28d3.abap.us10.hana.ondemand.com/sap/opu/odata/sap/ZSB_TRAVEL_SWAMI_V2/
-                 
+    

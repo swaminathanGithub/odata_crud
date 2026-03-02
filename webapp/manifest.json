@@ -31,7 +31,7 @@
         }
       },
       "mainService": {
-        "uri": "/sap/opu/odata/sap/ZSB_TRAVEL_SWAMI_V2/",
+        "uri": "/destinations/Z_RAP_BACKEND/sap/opu/odata/sap/ZSB_TRAVEL_SWAMI_V2/",
         "type": "OData",
         "settings": {
           "annotations": [
